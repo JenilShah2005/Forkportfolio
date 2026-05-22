@@ -1,9 +1,7 @@
 import YahooFinance  from "yahoo-finance2";
 import { getData } from "../../utils/getData.js";
 import { stockPriceStore } from "../../utils/stockPriceStore.js";
-const yahooFinance = new YahooFinance({
-  validation: { logWarnings: false, logErrors: false }
-});
+const yahooFinance = new YahooFinance();
 const stockmapping = (stockData) => {
     return {
         symbol: stockData.symbol,
